@@ -1,279 +1,172 @@
-# Initially taken from Github's Python gitignore file
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# C extensions
-*.so
-
-# tests and logs
-tests/fixtures/cached_*_text.txt
-logs/
-lightning_logs/
-lang_code_data/
-tests/outputs
-
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-
-# PyInstaller
+!/input/example.png
+!/web/extensions/core/
+!/web/extensions/logging.js.example
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
-
+# .lock
+# Byte-compiled / optimized / DLL files
+# C extensions
+# DS_Store (MacOS)
+# Distribution / packaging
+# Django stuff:
+# Environments
+# Flask stuff:
+# IPython
+# Initially taken from Github's Python gitignore file
 # Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
+# Jupyter Notebook
+# Models
+# PyBuilder
+# PyInstaller
+# Pycharm
+# Pyre type checker
+# RL pipelines may produce mp4 outputs
+# Rope project settings
+# SageMath parsed files
+# Scrapy stuff:
+# Sphinx documentation
+# Spyder project settings
+# TF code
+# Translations
 # Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
+# celery beat schedule file
+# data
+# dependencies
+# emacs
+# examples
+# mkdocs documentation
+# mypy
+# pre-commit
+# pyenv
+# ruff
+# tests and logs
+# vim
+# vscode
+#ctags
+*$py.class
+*.*~
+*.ckpt
+*.cover
+*.egg
+*.egg-info/
+*.h5
+*.joblib
+*.lock
+*.log
+*.manifest
+*.mlmodel
+*.mo
+*.mp4
+*.onnx
+*.pb
+*.pbtxt
+*.pkl
+*.png
+*.pot
+*.pt
+*.pth
+*.py[cod]
+*.safetensors
+*.sage.py
+*.so
+*.spec
+*.tflite
+*.webp
+.*.swp
+.DS_Store
+.Python
+.cache
 .coverage
 .coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-.hypothesis/
-.pytest_cache/
-
-# Translations
-*.mo
-*.pot
-
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-
-# Flask stuff:
-instance/
-.webassets-cache
-
-# Scrapy stuff:
-.scrapy
-
-# Sphinx documentation
-docs/_build/
-
-# PyBuilder
-target/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
-
-# pyenv
-.python-version
-
-# celery beat schedule file
-celerybeat-schedule
-
-# SageMath parsed files
-*.sage.py
-
-# Environments
+.dmypy.json
+.eggs/
 .env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
+.hypothesis/
+.idea
+.idea/
+.installed.cfg
+.ipynb_checkpoints
+.mypy_cache/
+.nox/
+.pre-commit*
+.pyre/
+.pytest_cache/
+.python-version
+.ropeproject
+.ruff_cache
+.scrapy
 .spyderproject
 .spyproject
-
-# Rope project settings
-.ropeproject
-
-# mkdocs documentation
-/site
-
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
-
-# Pyre type checker
-.pyre/
-
-# vscode
+.tox/
+.venv
 .vs
 .vscode
-
-# Pycharm
-.idea
-
-# TF code
-tensorflow_code
-
-# Models
-proc_data
-
-# examples
-runs
-/runs_old
-/wandb
-/examples/runs
+.webassets-cache
+/.vs
+/data
 /examples/**/*.args
 /examples/rag/sweep
-
-# data
-/data
-serialization_dir
-
-# emacs
-*.*~
-debug.env
-
-# vim
-.*.swp
-
-#ctags
-tags
-
-# pre-commit
-.pre-commit*
-
-# .lock
-*.lock
-
-# DS_Store (MacOS)
-.DS_Store
-# RL pipelines may produce mp4 outputs
-*.mp4
-
-# dependencies
+/examples/runs
+/input/
+/models/
+/output/
+/runs_old
+/site
+/temp/
+/tests-ui/data/object_info.json
 /transformers
-
-# ruff
-.ruff_cache
-
-wandb
-
+/user/
+/wandb
+/web/extensions/*
+/workflows*/*.json
+ENV/
+MANIFEST
+__pycache__/
+build/
+celerybeat-schedule
 ckpts/
-
-test.ipynb
 config.yaml
+coverage.xml
+custom_nodes/
+db.sqlite3
+debug.env
+develop-eggs/
+dist/
+dmypy.json
+docs/_build/
+downloads/
+eggs/
+env.bak/
+env/
+extra_model_paths.yaml
+htmlcov/
+instance/
+ipython_config.py
+lang_code_data/
+lib/
+lib64/
+lightning_logs/
+local_settings.py
+logs/
+nosetests.xml
+parts/
+pip-delete-this-directory.txt
+pip-log.txt
+proc_data
+profile_default/
+runs
+sdist/
+serialization_dir
+tags
+target/
+tensorflow_code
+test.ipynb
 test.ipynb__pycache__/
-*.py[cod]
-/output/
-/workflows*/*.json
-/input/
-!/input/example.png
-/models/
-/temp/
-*.ckpt
-*.safetensors
-*.pt
-*.pth
-*.h5
-*.onnx
-*.pb
-*.pbtxt
-*.tflite
-*.mlmodel
-*.pkl
-*.joblib
-extra_model_paths.yaml
-/.vs
-.idea/
+tests/fixtures/cached_*_text.txt
+tests/outputs
+var/
+venv.bak/
 venv/
-/web/extensions/*
-!/web/extensions/logging.js.example
-!/web/extensions/core/
-/tests-ui/data/object_info.json
-*.png
-*.webp
-/user/
-custom_nodes/
-__pycache__/
-*.py[cod]
-/output/
-/workflows*/*.json
-/input/
-!/input/example.png
-/models/
-/temp/
-*.ckpt
-*.safetensors
-*.pt
-*.pth
-*.h5
-*.onnx
-*.pb
-*.pbtxt
-*.tflite
-*.mlmodel
-*.pkl
-*.joblib
-extra_model_paths.yaml
-/.vs
-.idea/
-venv/
-/web/extensions/*
-!/web/extensions/logging.js.example
-!/web/extensions/core/
-/tests-ui/data/object_info.json
-*.png
-*.webp
-/user/
-custom_nodes/
-__pycache__/
-*.py[cod]
-/output/
-/workflows*/*.json
-/input/
-!/input/example.png
-/models/
-/temp/
-*.ckpt
-*.safetensors
-*.pt
-*.pth
-*.h5
-*.onnx
-*.pb
-*.pbtxt
-*.tflite
-*.mlmodel
-*.pkl
-*.joblib
-extra_model_paths.yaml
-/.vs
-.idea/
-venv/
-/web/extensions/*
-!/web/extensions/logging.js.example
-!/web/extensions/core/
-/tests-ui/data/object_info.json
-*.png
-*.webp
-/user/
-custom_nodes/
+wandb
+wheels/
 workspace*/
